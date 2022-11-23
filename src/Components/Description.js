@@ -5,7 +5,7 @@ function  Descripcion (){
 return(
     <div className="App-about">
         <h2>
-            About ...
+            About 
         </h2>
         <p>
         Process engineer with knowledge in research methodologies, collection, manipulation and data visualization. I have extensive 

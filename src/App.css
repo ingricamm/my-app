@@ -1,15 +1,22 @@
 .App {
+  width: calc(100vw - 17px);
    display: grid;
   grid-template-areas:
     'header'
     'main'
     'footer';
   grid-template-columns: 1fr;
-  grid-template-rows: 28rem auto 10rem;
+  grid-template-rows: 60vh auto 30rem;
+  box-sizing: border-box !important;
+ 
  
 }
  
-
+h2{
+  width: initial;
+  padding: .5rem;
+  
+}
 .App-header {
   grid-area: header;
   align-items: center;
@@ -26,7 +33,7 @@
   
 
 }
-/*Barra de navegación*/
+/* ---Barra de navegación  ---*/
 .navBar {
   width: 100%;
   height: 5rem;
@@ -48,7 +55,7 @@
 .navBar ul  {
   display: inline;
   list-style-type: none;
-  margin:   auto .5em;
+  margin:   auto 2vw;
   padding:  .2em auto;
   text-align: center
 }
@@ -81,125 +88,151 @@
   }
 }
 
-/* Author´s name of web site*/
+/* ---Author´s name of web site---*/
 .App-header-content{
   /* center the content of the author on middle of header*/
   text-align: center;
   align-items: center;
+  max-width: 80%;
   
- 
 
 }
+
 .App-header .App-header-content .Autor{
   text-align: center;
   background-color: rgba(93, 90, 90, 0.121);
   border:  1px rgb(255, 255, 255) ;
   border-style: dashed solid;
-  margin-top: 2rem;
-  padding: 2rem 5rem;
-  height:5rem ;
-  
+  margin: 5rem auto;
+  padding: 1rem;
+  max-height: 10rem;
 }
 
-/* profile photo in a circle*/
+/* ---profile photo in a circle ---*/
 .Photo-profile{
   background-image: url("./Components/img/header/yo.jpg ");
     background-size: contain;
   border: 5px solid rgb(253, 253, 253);
-
   width: 200px;
   height: 200px;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
-  left: 44%;
+  top: calc(100% - 50vh);
+  left: calc (100vw- 44%);
   margin: -25px 0 0 -25px;
 
 }
 
-/* Main*/
+/*--- Main ---*/
 .App-main{
+  width: 100%;
   grid-area: main;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
   margin-top:  1rem;
-  height: inherit;
+  max-height: 100%;
   
 }
-/* About*/
+
+/*--- About in home page ---*/
 
 .App-main .App-main-content{
- 
-  padding:  .2px;
+  margin-top: calc(3rem - 1vh) ;
 
 }
 
 .App-main .App-main-content .App-about{
-  margin-top:  5rem;
-  padding: 2rem;
+  margin: 2rem;
+  padding: auto;
   text-align: center;
+  
 }
 
+
+/*---Repository in home page ---*/
 .App-main .App-main-repository{
+ max-width: 100%;
 text-align: center;
 background-color: rgba(207, 207, 207, 0.459) ;
 min-height: 15rem;
 margin-top:  1rem;
-width:100% ;
+
  
 }
 
 .App-main .container{
   align-items: center;
   min-height: 10rem;
-
+ 
 }
 .App-main .container .App-list-repository{
-  width: 80%;
+  max-width: 100%;
   margin: auto;
   text-align: center;
-   display: flex ;
-   justify-content: space-around;
-  list-style-type: none;
-  
-  
-  
+  display: inline;
 }
 
 .App-main .container .App-list-repository li {
-  display: inline-block ;
-  background-color: rgb(107, 107, 107);
-  margin: 10px;
+  
+  border-radius: 5px;
+  display: inline-block !important;
+  margin: auto;
+  padding: auto;
+  justify-content: space-between;
+  min-height: 15rem;
+
 }
+
 .App-main .container .App-list-repository li .Card-repository{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 200px;
-  min-height: 10rem;
-    ;
+  width: 250px;
+  margin:  auto 10px;
+  
   ;
 }
 
-/* Contac form*/
+.App-main .container .App-list-repository li .Card-repository a {
+  text-decoration: none;
+  color: rgb(5, 38, 121);
+}
+.App-main .container .App-list-repository li .Card-repository img{
+  border-radius: 5px;
+  border:5px  solid #ffffff;
+  
+  
+}
+/* --- imagen del tamaño de su contenedor---*/
+  @supports(object-fit: cover){
+  .App-main .container .App-list-repository li .Card-repository  .card-media img{
+    height: 150px;
+    width: 100%;
+    object-fit:fill;
+    object-position: center center;
+  }}
+
+
+
+
+/* ---Contact form in home page ---*/
 
 .App-form{
   background-color: #ffffff;
-  width: 100%;
   text-align: center;
   justify-content: center;
   margin-bottom: 1rem;
 }
 .form{
- 
-  width: 100%;
+  width: 70% !important;
+  align-items: center;
   text-align: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin:auto;
 }
 .form .buttonSend{
   width:80px; 
@@ -214,14 +247,13 @@ width:100% ;
 
   text-align: center;
   list-style-type: none;
-  margin:  .5rem 1rem ;
-  padding: 1rem;
+  margin:  auto ;
+  padding: auto;
   
 }
 
 .form-container li{
-width: 80%;
-  display: flex;
+ align-items: center;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -230,7 +262,7 @@ width: 80%;
 
 .form-container li input,.form-container li textarea{
 margin:  auto 0  1em auto;
-min-width: 70%;
+width: 80%;
 background-color: rgba(255, 255, 255, 0.196);
 border: 0.5px solid rgba(40, 40, 40, 0.703);
 border-radius:5px;
@@ -246,7 +278,10 @@ height: 100px;
   padding-left: 5px;
 }
 
-/* footer*/
+
+
+
+/* ----footer in home page-----*/
  .App-main .App-footer{
   grid-area: footer;
   display: flex;
@@ -262,16 +297,14 @@ height: 100px;
   background-size: cover;
   color: rgb(0, 0, 0);
   width: 100%;
-  min-height: 5rem;
- 
-
+  height: 100%;
 }
 
 .App-main .App-footer .App-footer-content ul{
    display: inline;
   text-align: center;
   list-style-type: none;
-  padding: 1rem;
+ 
   
 }
 .App-main .App-footer .App-footer-content ul li{
@@ -279,13 +312,13 @@ height: 100px;
   display: inline-block;
   font-size: calc((12px + 2vmin));
   -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.633);
-  margin: 2rem;
+  margin: auto;
   min-width: 80px;
   min-height: 40px;
   padding:  auto;
   text-align: center;
 }
-
+ /*terminos y condiciones del footer*/
 .App-footer .Adicional-info{
   font-size: 10px;
   text-align: center;
@@ -294,3 +327,32 @@ height: 100px;
   width: 100%;
   padding: 5px;
 } 
+/*-----------------------------------------------------------------*/
+/* para pantallas tables y celulares */
+/*-----------------------------------------------------------------*/
+@media screen and (max-width: 50rem) {
+
+
+  .App-main-content .App-about p{
+    text-align: justify !important;
+  }
+    .form{
+      width: 80% !important;
+    }
+  
+    .form-container li{
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      
+    }
+  
+    .form-container li input,.form-container li textarea{
+      margin:  auto 0  1em auto;
+      width: 100%;
+    }
+  
+  }
+  
+  
