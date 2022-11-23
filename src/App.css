@@ -1,31 +1,57 @@
 .App {
-  text-align: center;
+   display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 5rem;
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ 
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  grid-area: header;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0.363),
+    rgba(0, 4, 255, 0.203)),url("./img/header/cover.jpeg  ");
+  background-attachment: fixed;
+  background-position:  center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content:space-between;
   color: white;
+  
+
 }
 
-.App-link {
-  color: #61dafb;
+.navBar{
+  width: 100%;
+  text-align: end;
+  font-size: calc(8px + 1.5vmin);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin:  .5em auto;
+}
+.navBar ul{
+
+  display: inline;
+  list-style-type: none;
+  margin:   auto .5em;
+  padding:  0.5em auto;
+  text-align: center
+}
+.navBar ul li{
+  display: inline
+}
+
+ .navBar a{
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +61,43 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* nombre del autor del sitio web*/
+.App-header-content{
+  /* centrar el contenido del autor en la mitar del header*/
+  position: relative;
+  display: flex;
+  flex: 80%;
+  justify-content: center;
+  align-items: center;
+
+}
+.Autor{
+  background-color: rgba(93, 90, 90, 0.121);
+  justify-content:center ;
+  border:  1px rgb(255, 255, 255) ;
+  border-style: dashed solid;
+  padding: 2rem 5rem;
+  text-align: center;
+  
+}
+
+.Photo-profile{
+  background-image: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0.363),
+    rgba(0, 4, 255, 0.203)),url("./img/header/yo.jpg  ");
+    background-size: contain;
+  border: 2px solid #000000;
+  width: 200px;
+  height: 200px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  margin: -25px 0 0 -25px;
+
 }
