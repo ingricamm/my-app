@@ -5,8 +5,8 @@
     'main'
     'footer';
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr 5rem;
-  height: 100%;
+  grid-template-rows: 28rem auto 10rem;
+ 
 }
  
 
@@ -16,43 +16,61 @@
   background-image: linear-gradient(
     to bottom,
     rgba(10, 10, 10, 0.363),
-    rgba(0, 4, 255, 0.203)),url("./img/header/cover.jpeg  ");
+    rgba(0, 4, 255, 0.203)),url("./Components/img/header/cover.jpeg ");
   background-attachment: fixed;
   background-position:  center;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
   color: white;
   
 
 }
-
-.navBar{
+/*Barra de navegación*/
+.navBar {
   width: 100%;
+  height: 5rem;
   text-align: end;
   font-size: calc(8px + 1.5vmin);
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin:  .5em auto;
 }
-.navBar ul{
 
+.navBar button{
+  background-color: transparent;
+  color: #000;
+}
+.navBar button i{
+  color: rgb(252, 252, 252);
+  
+  
+}
+.navBar ul  {
   display: inline;
   list-style-type: none;
   margin:   auto .5em;
-  padding:  0.5em auto;
+  padding:  .2em auto;
   text-align: center
 }
-.navBar ul li{
+.navBar ul li {
   display: inline
 }
 
  .navBar a{
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 15px;
   text-decoration: none;
   
 }
+.navBar ul li a:hover ,.navBar ul li button i:hover{
+  color:rgba(0, 255, 255, 0.645);
+  text-decoration: underline  ;
+}
+
+/* .navBar ul li a:visited {
+  color: rgb(237, 237, 237);
+
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -63,33 +81,32 @@
   }
 }
 
-/* nombre del autor del sitio web*/
+/* Author´s name of web site*/
 .App-header-content{
-  /* centrar el contenido del autor en la mitar del header*/
-  position: relative;
-  display: flex;
-  flex: 80%;
-  justify-content: center;
+  /* center the content of the author on middle of header*/
+  text-align: center;
   align-items: center;
+  
+ 
 
 }
-.Autor{
+.App-header .App-header-content .Autor{
+  text-align: center;
   background-color: rgba(93, 90, 90, 0.121);
-  justify-content:center ;
   border:  1px rgb(255, 255, 255) ;
   border-style: dashed solid;
+  margin-top: 2rem;
   padding: 2rem 5rem;
-  text-align: center;
+  height:5rem ;
   
 }
 
+/* profile photo in a circle*/
 .Photo-profile{
-  background-image: linear-gradient(
-    to bottom,
-    rgba(10, 10, 10, 0.363),
-    rgba(0, 4, 255, 0.203)),url("./img/header/yo.jpg  ");
+  background-image: url("./Components/img/header/yo.jpg ");
     background-size: contain;
-  border: 2px solid #000000;
+  border: 5px solid rgb(253, 253, 253);
+
   width: 200px;
   height: 200px;
   -moz-border-radius: 50%;
@@ -97,7 +114,183 @@
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 44%;
   margin: -25px 0 0 -25px;
 
 }
+
+/* Main*/
+.App-main{
+  grid-area: main;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  margin-top:  1rem;
+  height: inherit;
+  
+}
+/* About*/
+
+.App-main .App-main-content{
+ 
+  padding:  .2px;
+
+}
+
+.App-main .App-main-content .App-about{
+  margin-top:  5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App-main .App-main-repository{
+text-align: center;
+background-color: rgba(207, 207, 207, 0.459) ;
+min-height: 15rem;
+margin-top:  1rem;
+width:100% ;
+ 
+}
+
+.App-main .container{
+  align-items: center;
+  min-height: 10rem;
+
+}
+.App-main .container .App-list-repository{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+   display: flex ;
+   justify-content: space-around;
+  list-style-type: none;
+  
+  
+  
+}
+
+.App-main .container .App-list-repository li {
+  display: inline-block ;
+  background-color: rgb(107, 107, 107);
+  margin: 10px;
+}
+.App-main .container .App-list-repository li .Card-repository{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  min-height: 10rem;
+    ;
+  ;
+}
+
+/* Contac form*/
+
+.App-form{
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.form{
+ 
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.form .buttonSend{
+  width:80px; 
+  height: 40px;
+  color: rgb(236, 236, 236);
+  background-color: #0086fc;
+  border-radius: 5px;
+  border: none;
+}
+
+.form-container{
+
+  text-align: center;
+  list-style-type: none;
+  margin:  .5rem 1rem ;
+  padding: 1rem;
+  
+}
+
+.form-container li{
+width: 80%;
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+
+}
+
+.form-container li input,.form-container li textarea{
+margin:  auto 0  1em auto;
+min-width: 70%;
+background-color: rgba(255, 255, 255, 0.196);
+border: 0.5px solid rgba(40, 40, 40, 0.703);
+border-radius:5px;
+
+  
+}
+
+.form-container li textarea{
+height: 100px;
+
+}
+.form-container li ::placeholder{
+  padding-left: 5px;
+}
+
+/* footer*/
+ .App-main .App-footer{
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(10, 10, 10, 0.538),
+    rgba(2, 4, 131, 0.23)),url("./Components/img/header/cover.jpeg ");
+    background-attachment: fixed;
+  background-position:  center;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  min-height: 5rem;
+ 
+
+}
+
+.App-main .App-footer .App-footer-content ul{
+   display: inline;
+  text-align: center;
+  list-style-type: none;
+  padding: 1rem;
+  
+}
+.App-main .App-footer .App-footer-content ul li{
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: calc((12px + 2vmin));
+  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.633);
+  margin: 2rem;
+  min-width: 80px;
+  min-height: 40px;
+  padding:  auto;
+  text-align: center;
+}
+
+.App-footer .Adicional-info{
+  font-size: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: #000;
+  width: 100%;
+  padding: 5px;
+} 
