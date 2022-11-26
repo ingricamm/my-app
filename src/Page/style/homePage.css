@@ -1,0 +1,178 @@
+.home-container{
+   min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "main-header"
+      "main-main"
+      "main-footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: calc(100%*2/5) auto 5rem;
+  
+}
+
+
+.home-header-content {
+   grid-area: main-header;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0.363),
+      rgba(0, 4, 255, 0.203)),url("../../Components/img/style/fondo.jpeg");
+    background-attachment: fixed;
+    background-position:  center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+  
+  }
+  
+  
+  /* ---Author´s name of web site---*/
+  .home-header-content{
+    /* center the content of the author on middle of header*/
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+   
+  
+  }
+  
+  .home-header-content .Autor{
+    
+    text-align: center;
+    background-color: rgba(93, 90, 90, 0.121);
+    border:  1px rgb(255, 255, 255) ;
+    border-style: dashed solid;
+    margin:  auto 25px;
+    padding: 3rem;
+    justify-content: center;
+  }
+
+    /*--- Main ---*/
+  
+  /*--- About in home page ---*/
+  
+  
+  .main-content{
+ min-height: 100%;
+
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+  }
+   .home-main-content{
+    height: 100%;
+    grid-area: main-main;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    
+  }
+
+  .home-main-content h2 {
+    width: initial;
+   padding-bottom: 20px;
+   padding-top: 20px;
+  }
+  /* ---profile photo in a circle ---*/
+
+
+  .Photo-profile{
+    background-image: url("../../Components/img/style/profile.jpg ");
+      background-size: contain;
+    border: 5px solid rgb(253, 253, 253);
+    width: 13em;
+    height: 13em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: -125px;
+    left: calc(100vw - 50%);
+    margin: 2em 0 0 -7.5em;
+    
+  
+  }
+  
+
+  
+   .home-main-content .App-about{
+    margin: 1em;
+    margin-top:100px;
+    padding: auto;
+    text-align: center;
+    height: 200px;
+    
+  }
+  
+ 
+  
+
+  /* ----footer in home page-----*/
+ .home-footer-content{
+    grid-area: main-footer;
+    text-align: center;
+    justify-content:space-between;
+    align-items: center;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0.538),
+      rgba(2, 4, 131, 0.23)),url("../../Components/img/style/fondo.jpeg ");
+      background-attachment: fixed;
+    background-position:  center;
+    background-size: cover;
+    color: rgb(254, 254, 254);
+    max-width: 100%;
+    
+  }
+  
+   .home-footer-content ul{
+     display: inline;
+    text-align: center;
+    list-style-type: none;
+
+   
+    
+  }
+.home-footer-content ul li{
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: calc((12px + 2vmin));
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.633);
+    margin: 10px;
+    min-height: 40px;
+    padding:  auto;
+    text-align: center;
+  }
+   /*terminos y condiciones del footer*/
+
+   @media screen and (max-width: 600px) {
+
+    
+    .home-container{
+        grid-template-rows: calc(100%*1/5) 1fr max-content;
+        background-image: linear-gradient(
+            to bottom,
+            rgba(10, 10, 10, 0.363),
+            rgba(0, 4, 255, 0.203)),url("../../Components/img/style/fondo.jpeg");
+          background-attachment: fixed;
+          background-position:  center;
+          background-size: cover;
+
+    }
+
+
+    .Photo-profile{
+        top:-100px;
+        left: 55%;
+    }
+
+    .home-main-content.open{
+      display: none;
+    }
+   }
+

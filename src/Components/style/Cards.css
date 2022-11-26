@@ -1,0 +1,29 @@
+.card-panel{
+  max-width: 100%;
+  text-align: center;
+  background-color: rgb(224, 221, 221) ;
+  min-height: 200px;
+  margin-top:  1rem;
+}
+
+.Cards{
+    align-items: center;
+    min-height: 10rem;
+    padding: auto 10px;
+    max-width: 100%;
+    
+    text-align: center;
+  }
+  
+  .Cards li {
+    
+    border-radius: 5px;
+    display: inline-block !important;
+
+    padding: auto;
+    justify-content: space-between;
+   
+  
+  }
+  
+   

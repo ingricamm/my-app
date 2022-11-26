@@ -1,358 +1,63 @@
-.App {
-  width: calc(100vw - 17px);
-   display: grid;
-  grid-template-areas:
-    'header'
-    'main'
-    'footer';
-  grid-template-columns: 1fr;
-  grid-template-rows: 60vh auto 30rem;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box !important;
- 
+}
+.App{
+  max-width: 100vw;
  
 }
- 
-h2{
-  width: initial;
-  padding: .5rem;
-  
+
+.App-grid-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
+
+
+
 .App-header {
   grid-area: header;
-  align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(10, 10, 10, 0.363),
-    rgba(0, 4, 255, 0.203)),url("./Components/img/header/cover.jpeg ");
-  background-attachment: fixed;
-  background-position:  center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  
-
-}
-/* ---Barra de navegación  ---*/
-.navBar {
-  width: 100%;
-  height: 5rem;
-  text-align: end;
-  font-size: calc(8px + 1.5vmin);
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin:  .5em auto;
+  background-color: #000;
+  ; 
+ 
 }
 
-.navBar button{
-  background-color: transparent;
-  color: #000;
-}
-.navBar button i{
-  color: rgb(252, 252, 252);
-  
-  
-}
-.navBar ul  {
-  display: inline;
-  list-style-type: none;
-  margin:   auto 2vw;
-  padding:  .2em auto;
-  text-align: center
-}
-.navBar ul li {
-  display: inline
-}
 
- .navBar a{
-  color: rgb(255, 255, 255);
-  padding: 15px;
+.App-header a:hover{
+  color: #19b8e9;
   text-decoration: none;
-  
 }
-.navBar ul li a:hover ,.navBar ul li button i:hover{
-  color:rgba(0, 255, 255, 0.645);
-  text-decoration: underline  ;
-}
-
-/* .navBar ul li a:visited {
-  color: rgb(237, 237, 237);
-
-} */
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* ---Author´s name of web site---*/
-.App-header-content{
-  /* center the content of the author on middle of header*/
-  text-align: center;
-  align-items: center;
-  max-width: 80%;
-  
-
-}
-
-.App-header .App-header-content .Autor{
-  text-align: center;
-  background-color: rgba(93, 90, 90, 0.121);
-  border:  1px rgb(255, 255, 255) ;
-  border-style: dashed solid;
-  margin: 5rem auto;
-  padding: 1rem;
-  max-height: 10rem;
-}
-
-/* ---profile photo in a circle ---*/
-.Photo-profile{
-  background-image: url("./Components/img/header/yo.jpg ");
-    background-size: contain;
-  border: 5px solid rgb(253, 253, 253);
-  width: 200px;
-  height: 200px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  position: absolute;
-  top: calc(100% - 50vh);
-  left: calc (100vw- 44%);
-  margin: -25px 0 0 -25px;
-
-}
-
-/*--- Main ---*/
-.App-main{
-  width: 100%;
+.App-main {
+ position: relative;
   grid-area: main;
   align-items: center;
-  display: flex;
   flex-direction: column;
-  justify-content:space-between;
-  margin-top:  1rem;
-  max-height: 100%;
-  
-}
+  justify-content: space-between;
 
-/*--- About in home page ---*/
-
-.App-main .App-main-content{
-  margin-top: calc(3rem - 1vh) ;
 
 }
 
-.App-main .App-main-content .App-about{
-  margin: 2rem;
-  padding: auto;
+
+.App-footer {
+  grid-area: footer;
+  background-color: #000;
+  font-size: 10px;
   text-align: center;
-  
-}
-
-
-/*---Repository in home page ---*/
-.App-main .App-main-repository{
- max-width: 100%;
-text-align: center;
-background-color: rgba(207, 207, 207, 0.459) ;
-min-height: 15rem;
-margin-top:  1rem;
-
- 
-}
-
-.App-main .container{
-  align-items: center;
-  min-height: 10rem;
- 
-}
-.App-main .container .App-list-repository{
+  color: rgb(255, 255, 255);
   max-width: 100%;
-  margin: auto;
-  text-align: center;
-  display: inline;
+  padding: 5px;
 }
-
-.App-main .container .App-list-repository li {
-  
-  border-radius: 5px;
-  display: inline-block !important;
-  margin: auto;
-  padding: auto;
-  justify-content: space-between;
-  min-height: 15rem;
-
-}
-
-.App-main .container .App-list-repository li .Card-repository{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 250px;
-  margin:  auto 10px;
-  
-  ;
-}
-
-.App-main .container .App-list-repository li .Card-repository a {
-  text-decoration: none;
-  color: rgb(5, 38, 121);
-}
-.App-main .container .App-list-repository li .Card-repository img{
-  border-radius: 5px;
-  border:5px  solid #ffffff;
-  
-  
-}
-/* --- imagen del tamaño de su contenedor---*/
-  @supports(object-fit: cover){
-  .App-main .container .App-list-repository li .Card-repository  .card-media img{
-    height: 150px;
-    width: 100%;
-    object-fit:fill;
-    object-position: center center;
-  }}
-
-
-
 
 /* ---Contact form in home page ---*/
 
-.App-form{
+.App-form {
   background-color: #ffffff;
   text-align: center;
   justify-content: center;
   margin-bottom: 1rem;
 }
-.form{
-  width: 70% !important;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin:auto;
-}
-.form .buttonSend{
-  width:80px; 
-  height: 40px;
-  color: rgb(236, 236, 236);
-  background-color: #0086fc;
-  border-radius: 5px;
-  border: none;
-}
-
-.form-container{
-
-  text-align: center;
-  list-style-type: none;
-  margin:  auto ;
-  padding: auto;
-  
-}
-
-.form-container li{
- align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-
-}
-
-.form-container li input,.form-container li textarea{
-margin:  auto 0  1em auto;
-width: 80%;
-background-color: rgba(255, 255, 255, 0.196);
-border: 0.5px solid rgba(40, 40, 40, 0.703);
-border-radius:5px;
-
-  
-}
-
-.form-container li textarea{
-height: 100px;
-
-}
-.form-container li ::placeholder{
-  padding-left: 5px;
-}
 
 
-
-
-/* ----footer in home page-----*/
- .App-main .App-footer{
-  grid-area: footer;
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between;
-  align-items: center;
-  background-image: linear-gradient(
-    to bottom,
-    rgba(10, 10, 10, 0.538),
-    rgba(2, 4, 131, 0.23)),url("./Components/img/header/cover.jpeg ");
-    background-attachment: fixed;
-  background-position:  center;
-  background-size: cover;
-  color: rgb(0, 0, 0);
-  width: 100%;
-  height: 100%;
-}
-
-.App-main .App-footer .App-footer-content ul{
-   display: inline;
-  text-align: center;
-  list-style-type: none;
- 
-  
-}
-.App-main .App-footer .App-footer-content ul li{
-  color: rgb(255, 255, 255);
-  display: inline-block;
-  font-size: calc((12px + 2vmin));
-  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.633);
-  margin: auto;
-  min-width: 80px;
-  min-height: 40px;
-  padding:  auto;
-  text-align: center;
-}
- /*terminos y condiciones del footer*/
-.App-footer .Adicional-info{
-  font-size: 10px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  background-color: #000;
-  width: 100%;
-  padding: 5px;
-} 
-/*-----------------------------------------------------------------*/
-/* para pantallas tables y celulares */
-/*-----------------------------------------------------------------*/
-@media screen and (max-width: 50rem) {
-
-
-  .App-main-content .App-about p{
-    text-align: justify !important;
-  }
-    .form{
-      width: 80% !important;
-    }
-  
-    .form-container li{
-      align-items: flex-start;
-      display: flex;
-      flex-direction: column;
-      align-content: space-between;
-      
-    }
-  
-    .form-container li input,.form-container li textarea{
-      margin:  auto 0  1em auto;
-      width: 100%;
-    }
-  
-  }
-  
-  

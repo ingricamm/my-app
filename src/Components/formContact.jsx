@@ -1,4 +1,5 @@
-
+import "./style/formcontact.css"
+import React from 'react';
 
 function Contact() {
     
@@ -9,7 +10,7 @@ function Contact() {
     
       <ul className="form-container">
         <li>
-        <label for="name">
+        <label htmlFor="name">
             Name
           </label>
             <input
@@ -21,21 +22,21 @@ function Contact() {
             ></input>
           </li>
         <li>
-          <label for="email">
+          <label htmlFor="email">
             E-mail
           </label>
           <input type="email"
             name="email"
             id="email"
             placeholder="admin@example.com"
-            maxlength="254"
+            maxLength="254"
             pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
             
             required>
           </input>
         </li>
         <li>
-          <label for="mensaje">Menssage</label>
+          <label htmlFor="mensaje">Menssage</label>
           <textarea type="text"
            id="text"
            name="text" placeholder="text"  required>

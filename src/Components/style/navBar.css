@@ -1,0 +1,102 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  margin: auto 2vw;
+  background-color: #000;
+}
+.App-Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(7px + 1.5vmin);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: auto;
+  position: relative;
+  max-width: 100%;
+}
+
+.navBar .logo {
+  padding: 1vw;
+ 
+}
+.navBar button {
+  background-color: transparent;
+  border: none;
+  width: 30px;
+}
+.navBar button i {
+  color: rgb(252, 252, 252);
+}
+
+.navBar ul {
+  list-style-type: none;
+  background-color: #000;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.navBar ul li {
+  display: inline;
+  padding: 1vw;
+  width: 100%;
+}
+
+.navBar a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.navBar ul li a:hover,
+.navBar ul li button i:hover {
+  color: rgba(0, 255, 255, 0.645);
+  text-decoration: underline;
+}
+
+.burger-Btn {
+  display: none;
+  position: absolute;
+  right: 10px;
+ top:0;
+  padding: 5px;
+  color: #000;
+  
+  
+}
+/*----RESPONSIVE DESING--*/
+
+@media screen and (max-width: 600px) {
+  .navBar{
+    padding: 2vw;
+    font-size: calc(12px + 1.5vmin);
+    
+  }
+  .App-Navbar {
+    width: 100%;
+ 
+  }
+  .App-Navbar ul {
+    flex-direction: column;
+    justify-content:initial;
+    height: 100vh;
+    
+  }
+  li:nth-child(1) {
+    border-top: 1px solid rgba(0, 0, 0, 0.555);
+    margin-top: 50px;
+  }
+  .li {
+    width: 100%;
+    border-top: 1px solid rgba(27, 27, 27, 0.555);
+    text-align: center;
+    padding: 20px 0;
+  }
+  .burger-Btn {
+    display: block;
+    font-size: calc(12px + 1.5vmin);
+  }
+}
