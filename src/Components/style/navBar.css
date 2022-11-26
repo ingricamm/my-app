@@ -53,10 +53,10 @@
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.navBar ul li a:hover,
+.navBar  a:hover,
 .navBar ul li button i:hover {
-  color: rgba(0, 255, 255, 0.645);
-  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.486);
+  /* text-decoration: underline; */
 }
 
 .burger-Btn {

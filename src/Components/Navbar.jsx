@@ -54,10 +54,10 @@ const [toggleMenu, setToggleMenu] = useState(false)
         {(toggleMenu || screenWidth > 600) && (
           <ul>
             <li><Searchbox />  </li>
-            <li><Link className="About" to="/about" onClick={toggleNav}> about </Link></li>
-            <li><a href="/blog"> blog</a></li>
-            <li> <a href="/Repository" onClick={toggleNav}> Repository</a> </li>
-            <li> <a href="/contact" onClick={toggleNav}> Contact</a> </li>
+            <li><Link  to="/about" className="nav-link" onClick={toggleNav}> about </Link></li>
+            <li><Link to="/blog" className="nav-nav-link"> blog</Link></li>
+            <li> <Link to="/Repository" className="nav-link" onClick={toggleNav}> Repository</Link> </li>
+            <li> <Link to="/contact" className="nav-link" onClick={toggleNav}> Contact</Link> </li>
           </ul>
         )}
           <button className="burger-Btn" onClick={toggleNav}><i className="fa fa-bars"></i>
