@@ -19,6 +19,7 @@ function Homepage() {
           <div className="main-content">
             <div className="Photo-profile"></div>
             <Description />
+          
             <Cards />
             <Contact />
           </div>

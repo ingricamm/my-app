@@ -1,5 +1,5 @@
 .form{
-    width: 70% !important;
+    width: 50% !important;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -43,7 +43,7 @@
   
   .form-container li textarea{
   
-  
+  height: 150px;
   }
   .form-container li ::placeholder{
     padding-left: 5px;

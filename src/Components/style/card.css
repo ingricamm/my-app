@@ -1,6 +1,6 @@
 
 .card-container{
-  width: 250px;
+  width: 220px;
     background-color: #ffffff; 
     border-radius: 5px;
     border:1px  solid #53535335;  
@@ -12,12 +12,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 10px;
+    margin: 8px;
     padding: auto;
     padding-bottom:20px ;
     height: 230px;
 
   }
+
+  /* selecciona tarjeta*/
+  .card-container:hover{
+    border:2px  solid #9d9d9d;
+    background-color: rgba(255, 255, 255, 0.888);
+    width: 250px;height: 260px;
+    box-shadow:8px 8px 10px 0 #0b0b0b;
+  }
+ 
   
  .card a {
     text-decoration: none;

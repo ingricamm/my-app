@@ -1,4 +1,5 @@
 import "./style/navBar.css";
+import Searchbox from "./Searchbox";
 
 import { Link } from "react-router-dom";
 import React, {useEffect,useState} from "react";
@@ -15,9 +16,9 @@ const [toggleMenu, setToggleMenu] = useState(false)
   const toggleNav = () => {
     setToggleMenu(!toggleMenu)
     if (!toggleMenu == true ){
-      document.querySelector(".home-main-content").classList.add("open")}
+      document.querySelector(".home-container").classList.add("open")}
       else{
-      document.querySelector(".home-main-content").classList.remove("open")
+      document.querySelector(".home-container").classList.remove("open")
     } 
     
   }
@@ -52,7 +53,7 @@ const [toggleMenu, setToggleMenu] = useState(false)
         <nav className="App-Navbar">
         {(toggleMenu || screenWidth > 600) && (
           <ul>
-            <li> <button className="search-Btn" ><i className="fa fa-search"></i> </button> </li>
+            <li><Searchbox />  </li>
             <li><Link className="About" to="/about" onClick={toggleNav}> about </Link></li>
             <li><a href="/blog"> blog</a></li>
             <li> <a href="/Repository" onClick={toggleNav}> Repository</a> </li>
