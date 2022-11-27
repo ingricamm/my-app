@@ -17,7 +17,10 @@ function Homepage() {
 
         <div className="home-main-content">
           <div className="main-content">
+            <div>
+
             <div className="Photo-profile"></div>
+            </div>
             <Description />
           
             <Cards />
@@ -37,7 +40,7 @@ function Homepage() {
               <i className="fa fa-github"></i>
             </li>
           </ul>
-          <div className="App-footer-content">terminos y condiciones</div>
+         
         </div>
       </div>
     </>

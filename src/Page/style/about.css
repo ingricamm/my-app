@@ -1,3 +1,90 @@
-.About{
-    background-color:aqua;
+.About {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: calc(8px + 1.5vmin);
+}
+.About .aside1,
+.aside2 {
+  height: inherit;
+  background-color: rgba(249, 249, 249, 0.578);
+}
+.About section {
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgba(128, 128, 128, 0.308);
+  border-right: 1px solid rgba(128, 128, 128, 0.301);
+  width: 70%;
+  padding: 2vw;
+}
+
+.Article {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: inherit;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  padding: 2vw;
+  justify-content: center;
+  min-height: 300px;
+}
+/*-------------------------Quien soy----------------------------*/
+.quien-Soy{
+    display: flex;
+    justify-content: space-around;
+}
+.About  .quien-Soy ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    list-style: none;
+  }
+
+    .quien-Soy .avatar{
+        max-width: 300px;
+        max-height: 300px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50% ;
+       
+    }
+/*------------------FORMACIÖN-----------------------------------*/
+.About  .Article ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.Article ul li {
+  margin-top: initial;
+}
+@media screen and (max-width: 600px) {
+  .About {
+    text-align: justify;
+  }
+  .About section {
+    order: 0;
+    width: 100%;
+  }
+  .About .aside1,
+  .aside2 {
+    width: 100%;
+    order: 2;
+  }
+  .Article article {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    justify-content: center;
+    align-items: center;
+  }
 }
