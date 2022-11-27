@@ -21,8 +21,7 @@ function Homepage() {
 
             <div className="Photo-profile"></div>
             </div>
-            <Description />
-          
+            <Description /> 
             <Cards />
             <Contact />
           </div>

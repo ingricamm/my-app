@@ -1,19 +1,21 @@
 import "./App.css";
-import Navbar from "./Components/Navbar";
+import Navbar  from "./Components/Navbar";
 import Homepage from "./Page/Homepage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./Page/About";
 import React from "react";
 
 function App() {
+
+  
   return (
     <div className="App">
       <Router>
         <body className="App-grid-container">
           <header className="App-header">
-            <Navbar />
+            <Navbar open={open}  />
           </header>
-          <main className="App-main">
+          <main className="App-main" >
             <div className="App-main-content">
               <Routes>
                 <Route path="/" element={<Homepage />} />

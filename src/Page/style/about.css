@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  font-size: calc(8px + 1.5vmin);
+  font-size: calc(6px + 1.5vmin);
 }
 .About .aside1,
 .aside2 {
@@ -13,14 +13,15 @@
 }
 .About section {
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(245, 245, 245, 0.607);
   border-left: 1px solid rgba(128, 128, 128, 0.308);
-  border-right: 1px solid rgba(128, 128, 128, 0.301);
+  border-right: 1px solid rgba(199, 199, 199, 0.301);
   width: 70%;
   padding: 2vw;
+  justify-content: center;
 }
 
-.Article {
+.About-main-1 {
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -35,11 +36,12 @@ article {
   min-height: 300px;
 }
 /*-------------------------Quien soy----------------------------*/
-.quien-Soy{
+.About-main-1{
     display: flex;
+    flex-direction: row ;
     justify-content: space-around;
 }
-.About  .quien-Soy ul {
+.About  .About-main-1 ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,16 +49,16 @@ article {
     list-style: none;
   }
 
-    .quien-Soy .avatar{
-        max-width: 300px;
-        max-height: 300px;
+    .About-main-1 .avatar{
+        max-width: 15rem;
+        max-height: 15rem;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
         border-radius: 50% ;
        
     }
 /*------------------FORMACIÖN-----------------------------------*/
-.About  .Article ul {
+.About  .About-main-3 ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,9 +66,28 @@ article {
   text-align: left;
 }
 
-.Article ul li {
+.About-main-1 ul li {
   margin-top: initial;
 }
+
+/*-------------------------Que hago----------------------------*/
+
+
+.About-main-4 ul{
+min-width: 40%;
+  text-align: left;
+  margin-left: 2vw;
+  justify-content: space-around;
+}
+
+
+@media screen and (max-width: 850px) {
+  .About section {
+    width: 80%;
+ 
+  }
+}
+
 @media screen and (max-width: 600px) {
   .About {
     text-align: justify;
@@ -80,11 +101,31 @@ article {
     width: 100%;
     order: 2;
   }
-  .Article article {
+
+  .About-main-1 {
+    display: flex;
+    display: flex;
+    flex-direction: column-reverse;
+   text-align: center;
+   align-items: center;
+}
+  .About-main-2 {
     display: flex;
     flex-direction: column;
     padding: 2vw;
     justify-content: center;
     align-items: center;
   }
+
+  .About-main-4{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    
+   text-align: center;
+   align-items: center;
 }
+.About-main-4 ul{
+width: 100%;
+padding: 8px;
+}}
