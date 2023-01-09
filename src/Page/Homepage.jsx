@@ -1,6 +1,5 @@
 import "./style/homePage.css";
 import Cards from "../Components/Cards";
-import Contact from "../Components/formContact";
 import Description from "../Components/Description";
 import React from "react";
 
@@ -10,18 +9,20 @@ function Homepage() {
       <div className="home-container">
         <div className="home-header-content">
           <div className="Autor">
-            <h2>Carolina Mosquera Moreno</h2>
+            <h1>Doing</h1>
             Process Engineer/ Data Analytics
           </div>
         </div>
 
         <div className="home-main-content">
           <div className="main-content">
+            <div>
+
             <div className="Photo-profile"></div>
-            <Description />
-          
+            </div>
+            <Description /> 
             <Cards />
-            <Contact />
+
           </div>
         </div>
 
@@ -37,7 +38,7 @@ function Homepage() {
               <i className="fa fa-github"></i>
             </li>
           </ul>
-          <div className="App-footer-content">terminos y condiciones</div>
+         
         </div>
       </div>
     </>
