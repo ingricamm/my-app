@@ -20,11 +20,25 @@
     
     border-radius: 5px;
     display: inline-block !important;
-
     padding: auto;
     justify-content: space-between;
    
   
   }
   
-   
+  @media screen and (min-width: 1800px) {
+    .card-panel{
+      
+      min-height: 650px;
+      
+    }
+
+    .Cards{
+      align-items: center;
+      min-height: 15rem;
+      padding:2% 10px;
+      max-width: 100%;
+  
+    }
+  
+  }

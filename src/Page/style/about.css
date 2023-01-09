@@ -1,0 +1,142 @@
+.About {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: calc(6px + 1.5vmin);
+}
+.About .aside1,
+.aside2 {
+  height: inherit;
+  background-color: rgba(249, 249, 249, 0.578);
+}
+.About-header{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  text-align: center;
+  justify-content: center;
+}
+.About section {
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.607);
+  border-left: 1px solid rgba(128, 128, 128, 0.308);
+  border-right: 1px solid rgba(199, 199, 199, 0.301);
+  width: 70%;
+  padding: 2vw;
+  justify-content: center;
+}
+
+.About-main-1 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: inherit;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  padding: 2vw;
+  justify-content: center;
+  min-height: 200px;
+  padding-bottom: 2rem;
+  margin:10px auto ;
+}
+/*-------------------------Quien soy----------------------------*/
+.About-main-1{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+}
+.About  .About-main-1 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    list-style: none;
+  }
+
+    .About-main-1 .avatar{
+      width: 15rem;
+     height: 20rem;
+       border-radius: 10% ;
+       
+    }
+
+    .About-main , .Article{
+      margin:10px auto ;
+    }
+/*------------------FORMACIÖN-----------------------------------*/
+.About  .About-main-3 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.About-main-1 ul li {
+  margin-top: initial;
+}
+
+/*-------------------------Que hago----------------------------*/
+
+
+.About-main-4 ul{
+min-width: 40%;
+  text-align: left;
+  margin-left: 2vw;
+  justify-content: space-around;
+}
+
+
+@media screen and (max-width: 850px) {
+  .About section {
+    width: 80%;
+ 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .About ,.About-header{
+    text-align: justify;
+  }
+  .About section {
+    order: 0;
+    width: 100%;
+  }
+  .About .aside1,
+  .aside2 {
+    width: 100%;
+    order: 2;
+  }
+
+  .About-main-1 {
+    display: flex;
+    display: flex;
+    flex-direction: column-reverse;
+   text-align: center;
+   align-items: center;
+}
+  .About-main-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .About-main-4{
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    
+   text-align: center;
+   align-items: center;
+}
+.About-main-4 ul{
+width: 100%;
+padding: 8px;
+}}

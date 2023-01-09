@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
 .navBar {
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: sticky;
+
   top: 0;
   margin: 10px 2vw;
   padding:auto; 
@@ -20,8 +26,12 @@
 }
 
 .navBar .logo {
-  padding: 1vw;
-  font-size: calc(8px + 1.5vmin);
+  padding: 5px;
+}
+
+.navBar .logo img{
+   padding: 5px;
+  width:120px ;
  
 }
 .navBar button {
@@ -53,10 +63,10 @@
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.navBar ul li a:hover,
+.navBar  a:hover,
 .navBar ul li button i:hover {
-  color: rgba(0, 255, 255, 0.645);
-  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.486);
+  /* text-decoration: underline; */
 }
 
 .burger-Btn {
@@ -76,26 +86,30 @@
     padding: 2vw;
     font-size: calc(12px + 1.5vmin);
     
+    
   }
   .App-Navbar {
     width: 100%;
-    
+    transition: right 0.3s linear
   }
   .App-Navbar ul {
     flex-direction: column;
     justify-content:initial;
     height: 100vh;
     
+    
   }
-  li:nth-child(1) {
-    border-top: 1px solid rgba(0, 0, 0, 0.555);
+  .App-Navbar li:nth-child(1) {
+    border-top: 1px solid rgba(132, 132, 132, 0.555);
     margin-top: 50px;
+    margin-bottom: 10px;
   }
-  .li {
+  .App-Navbar ul li {
     width: 100%;
-    border-top: 1px solid rgba(27, 27, 27, 0.555);
-    text-align: center;
-    padding: 20px 0;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.555);
+    text-align: left;
+    padding: 10px 0;
+    
   }
   .burger-Btn {
     display: block;
