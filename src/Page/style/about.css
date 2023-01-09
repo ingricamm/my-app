@@ -11,6 +11,7 @@
   height: inherit;
   background-color: rgba(249, 249, 249, 0.578);
 }
+<<<<<<< HEAD
 .About-header{
   display: flex;
   flex-direction: column;
@@ -18,6 +19,8 @@
   text-align: center;
   justify-content: center;
 }
+=======
+>>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
 .About section {
   align-items: center;
   background-color: rgba(245, 245, 245, 0.607);
@@ -40,9 +43,13 @@ article {
   flex-direction: row;
   padding: 2vw;
   justify-content: center;
+<<<<<<< HEAD
   min-height: 200px;
   padding-bottom: 2rem;
   margin:10px auto ;
+=======
+  min-height: 300px;
+>>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
 }
 /*-------------------------Quien soy----------------------------*/
 .About-main-1{
@@ -59,6 +66,7 @@ article {
   }
 
     .About-main-1 .avatar{
+<<<<<<< HEAD
       width: 15rem;
      height: 20rem;
        border-radius: 10% ;
@@ -68,6 +76,15 @@ article {
     .About-main , .Article{
       margin:10px auto ;
     }
+=======
+        max-width: 15rem;
+        max-height: 15rem;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50% ;
+       
+    }
+>>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
 /*------------------FORMACIÖN-----------------------------------*/
 .About  .About-main-3 ul {
   display: flex;
@@ -100,7 +117,11 @@ min-width: 40%;
 }
 
 @media screen and (max-width: 600px) {
+<<<<<<< HEAD
   .About ,.About-header{
+=======
+  .About {
+>>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
     text-align: justify;
   }
   .About section {
