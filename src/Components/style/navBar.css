@@ -99,11 +99,7 @@
     
     
   }
-<<<<<<< HEAD
   .App-Navbar li:nth-child(1) {
-=======
-  li:nth-child(1) {
->>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
     border-top: 1px solid rgba(132, 132, 132, 0.555);
     margin-top: 50px;
     margin-bottom: 10px;

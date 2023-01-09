@@ -75,17 +75,10 @@
   }
   /* ---profile photo in a circle ---*/
 
-<<<<<<< HEAD
-  
-    .Photo-profile{
-    display:block;
-    background-image: url("../../Components/img/avatar.png ");
-=======
 
   .Photo-profile{
     display:block;
     background-image: url("../../Components/img/style/profile.jpg ");
->>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
       background-size: contain;
     border: 5px solid rgb(253, 253, 253);
     width: 200px;
@@ -98,7 +91,6 @@
    
   
   }
-<<<<<<< HEAD
   @media screen and (max-width: 1500px) {
     .Photo-profile{
     
@@ -112,8 +104,6 @@
     }
 
   }
-=======
->>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
 
    .home-main-content .App-about{
     margin: 1em;
@@ -165,11 +155,7 @@
    /*terminos y condiciones del footer*/
 
    @media screen and (max-width: 800px) {
-<<<<<<< HEAD
    
-=======
-
->>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
     
     .home-container{
         grid-template-rows: calc(100%*1/5) 1fr max-content;
@@ -184,20 +170,12 @@
     }
 
 
-<<<<<<< HEAD
-=======
-  
-
-
-
->>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
     .home-header-content {
       height:400px;
       align-items: center;
    }
 
    .Photo-profile{
-<<<<<<< HEAD
     width: 120px;
     height: 120px;
     margin-top: -70px;
@@ -217,13 +195,4 @@
     }
 
   }
-=======
-    width: 150px;
-    height: 150px;
-    margin-top: -70px;
-    margin-left: calc(100vw - 68%);
-   }
-  }
-
->>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
 

@@ -2,11 +2,7 @@ import React from "react";
 import "./style/about.css";
 import Tarjeta from "../Components/Tarjeta";
 import grados from "../Components/img/grados.jpg";
-<<<<<<< HEAD
 import perfil from "../Components/img/tatacoa.jpg";
-=======
-import perfil from "../Components/img/perfil.jpg";
->>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
 
 function About() {
   return (
@@ -19,11 +15,7 @@ function About() {
             <article>
               <p>
                 Ingeeniera de procesos y Analista de datos con buenas
-<<<<<<< HEAD
                 capacidades de análisis. con más de 2 años de experiencia en
-=======
-                capacidades de análisis. Con más de 2 años de experiencia en
->>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
                 investigación, análisis y visualización de datos además de
                 liderar proyectos de mejoramiento, así como de proyectos de
                 desarrollo e implementación de nuevos productos y procesos. Con
@@ -69,11 +61,7 @@ function About() {
                 </p>
               </article>
             </div>
-<<<<<<< HEAD
           <hr/>
-=======
-
->>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
             <div className="Article">
               <h2>Formación </h2>
               <article className="About-main-3">
@@ -98,7 +86,6 @@ function About() {
                 </ul>
               </article>
             </div>
-<<<<<<< HEAD
             <hr/>
             <div className="Article">
               <h2>¿Qué Hago? </h2>
@@ -106,14 +93,6 @@ function About() {
                 <ul className="procesos">
                   <h3> Ingenieria de Procesos</h3>
                   <li>Diseño y optimización de procesos</li>
-=======
-            <div>
-              <h2>¿Qué Hago? </h2>
-              <article className="About-main-4">
-                <ul className="porcesos">
-                  <h3> Ingenieria de Procesos</h3>
-                  <li>Diseñ0 y optimización de procesos</li>
->>>>>>> 0ff3f70d9655847f8d265b2fe75adfc7e8cbfbf8
                   <li>
                     Diseño de Controladores para la automatización de procesos
                   </li>
